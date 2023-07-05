@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Mukta:wght@300;400&family=Poppins:wght@500&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.parent-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./back.avif);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: calc(100vw - 70vw);
+    background: rgb(225, 224, 224);
+    border-radius: 10px;
+    padding: 35px 40px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.home-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./back.avif);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 15px;
+}
+
+h1 span {
+    color: rgb(183, 100, 100);
+}
+
+input {
+    width: 100%;
+    padding: 14px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1521);
+    outline: none;
+    background: transparent;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 14px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1521);
+    outline: none;
+    background: transparent;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #817c7c;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+.submit-button button {
+    padding: 10px 30px;
+    background-color: rgb(202, 194, 194);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.account-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.account-container a {
+    text-decoration: none;
+    color: rgb(183, 100, 100);
+    font-family: 'Poppins', sans-serif;
+}
+
+.log-out{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 30px;
+}
+
+.log-out button{
+    padding: 10px 30px;
+    background-color: #cecece;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: calc(100vw - 30vw);
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="container">
+            <form action="">
+                <h1><span> Registration </span> Form</h1>
+                <div class="input-container">
+                    <input type="text" id="fname" placeholder="First Name" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="lname" placeholder="Last Name" required>
+                </div>
+                <div class="input-container">
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="username" placeholder="Enter Your Username" required>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="pass" placeholder="Enter Your password" required autocomplete="on">
+                </div>
+                <div class="input-container">
+                    <input type="password" id="cpass" placeholder="Enter Confirm password" required autocomplete="on">
+                </div>
+                <div class="input-container">
+                    <select id="role" required>
+                        <option value="" disabled selected hidden>Select Role</option>
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
+                </div>
+                <div class="submit-button">
+                    <button class="button">Submit</button>
+                </div>
+                <div class="account-container">
+                    <a href="">Forget Password</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
