@@ -10,13 +10,14 @@
 .parent-container {
     width: 100%;
     min-height: 100vh;
-    background-image: url(./back.avif);
+    background-image: url(../Images/back.avif);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0px;
 }
 
 .container {
@@ -31,10 +32,16 @@
 .home-container{
     width: 100%;
     min-height: 100vh;
-    background-image: url(./back.avif);
+    background-image: url(../Images/back.avif);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -44,7 +51,11 @@ h1 {
     margin-bottom: 15px;
 }
 
-h1 span {
+h2{
+    margin: 20px;
+}
+
+h1 span,h2 span {
     color: rgb(183, 100, 100);
 }
 
@@ -76,7 +87,7 @@ select {
 
 .submit-button button {
     padding: 10px 30px;
-    background-color: rgb(202, 194, 194);
+    background-color: rgb(208 180 155);
     outline: none;
     border: none;
     border-radius: 5px;
@@ -86,9 +97,7 @@ select {
 }
 
 .account-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     font-size: 14px;
     margin-top: 12px;
 }
@@ -108,7 +117,7 @@ select {
 
 .log-out button{
     padding: 10px 30px;
-    background-color: #cecece;
+    background-color: rgb(208 180 155);
     outline: none;
     border: none;
     border-radius: 5px;
