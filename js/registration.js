@@ -19,22 +19,25 @@ submit_button.addEventListener("click", (e) => {
     else if (pass !== cpass) {
         alert("Password does not match");
     }
+    else if (!isValidEmail(email)) {
+        alert("Email is not in a valid format");
+    }
     else {
         let allData = JSON.parse(localStorage.getItem("alldata")) || [];
 
-        existingUser = allData.find((user) => user.UserName === username);
+        existingUser = allData.find((user) => user.userName === username);
         if (existingUser) {
             alert("Username already exists");
         }
         else {
             let userData = {
-                "FirstName": fname,
-                "LastName": lname,
-                "Email": email,
-                "UserName": username,
-                "Password": pass,
-                "Cpassword": cpass,
-                "Role": role
+                "firstName": fname,
+                "lastName": lname,
+                "email": email,
+                "userName": username,
+                "password": pass,
+                "confirmPassword": cpass,
+                "userRole": role
             };
 
             allData.push(userData);
@@ -45,3 +48,8 @@ submit_button.addEventListener("click", (e) => {
         }
     }
 });
+
+function isValidEmail(email) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+}

@@ -10,7 +10,7 @@
 .parent-container {
     width: 100%;
     min-height: 100vh;
-    background-image: url(../Images/back.avif);
+    background-image: url(../images/back.avif);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -32,7 +32,7 @@
 .home-container {
     width: 100%;
     min-height: 100vh;
-    background-image: url(../Images/back.avif);
+    background-image: url(../images/back.avif);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
