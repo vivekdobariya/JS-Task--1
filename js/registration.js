@@ -20,21 +20,28 @@ submit_button.addEventListener("click", (e) => {
         alert("Password does not match");
     }
     else {
-        let userData = {
-            "FirstName": fname,
-            "LastName": lname,
-            "Email": email,
-            "UserName": username,
-            "Password": pass,
-            "Cpassword": cpass,
-            "Role": role
-        };
-
         let allData = JSON.parse(localStorage.getItem("alldata")) || [];
-        allData.push(userData);
-        localStorage.setItem("alldata", JSON.stringify(allData));
 
-        alert("Registration Successful");
-        window.location.href = "login.html";
+        existingUser = allData.find((user) => user.UserName === username);
+        if (existingUser) {
+            alert("Username already exists");
+        }
+        else {
+            let userData = {
+                "FirstName": fname,
+                "LastName": lname,
+                "Email": email,
+                "UserName": username,
+                "Password": pass,
+                "Cpassword": cpass,
+                "Role": role
+            };
+
+            allData.push(userData);
+            localStorage.setItem("alldata", JSON.stringify(allData));
+
+            alert("Registration Successful");
+            window.location.href = "login.html";
+        }
     }
 });
