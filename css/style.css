@@ -29,7 +29,7 @@
     overflow: hidden;
 }
 
-.home-container{
+.home-container {
     width: 100%;
     min-height: 100vh;
     background-image: url(../Images/back.avif);
@@ -38,7 +38,7 @@
     background-size: cover;
 }
 
-.table-container{
+.table-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,11 +51,12 @@ h1 {
     margin-bottom: 15px;
 }
 
-h2{
+h2 {
     margin: 20px;
 }
 
-h1 span,h2 span {
+h1 span,
+h2 span {
     color: rgb(183, 100, 100);
 }
 
@@ -108,14 +109,14 @@ select {
     font-family: 'Poppins', sans-serif;
 }
 
-.log-out{
+.log-out {
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 30px;
 }
 
-.log-out button{
+.log-out button {
     padding: 10px 30px;
     background-color: rgb(208 180 155);
     outline: none;

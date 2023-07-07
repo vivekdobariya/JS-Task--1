@@ -5,14 +5,13 @@ login.addEventListener("click", (e) => {
     const userName = document.getElementById("Username").value;
     const password = document.getElementById("password").value;
 
-    let allData = JSON.parse(localStorage.getItem("alldata")) || [];
+    let allData = JSON.parse(localStorage.getItem("alldata"));
 
-    let validUser = allData.find(
-        (user) => user.UserName === userName && user.Password === password
-    );
+    let currentUser = allData.find((user) => user.UserName === userName && user.Password === password);
 
-    if (validUser) {
-        localStorage.setItem("currentUser", JSON.stringify(validUser));
+    if (currentUser) {
+        localStorage.setItem("currentUser", JSON.stringify(currentUser));
+        alert("Login Successful");
         window.location.href = "home.html";
     }
     else {

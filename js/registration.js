@@ -12,22 +12,22 @@ submit_button.addEventListener("click", (e) => {
 
     if (fname === "" || lname === "" || email === "" || username === "" || pass === "" || cpass === "" || role === "") {
         alert("Input field is empty");
-    } 
+    }
     else if (pass.length < 6) {
         alert("Password should be at least 6 characters");
-    } 
+    }
     else if (pass !== cpass) {
         alert("Password does not match");
-    } 
+    }
     else {
         let userData = {
-            "firstName": fname,
-            "lastName": lname,
-            "emailAddress": email,
-            "userName": username,
-            "password": pass,
-            "cPassword": cpass,
-            "userRole": role
+            "FirstName": fname,
+            "LastName": lname,
+            "Email": email,
+            "UserName": username,
+            "Password": pass,
+            "Cpassword": cpass,
+            "Role": role
         };
 
         let allData = JSON.parse(localStorage.getItem("alldata")) || [];
